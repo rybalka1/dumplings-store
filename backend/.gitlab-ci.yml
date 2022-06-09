@@ -151,7 +151,8 @@ docker-backend-image-build:
 
 helm-release:
   stage: helm-release
-  image: rybalka1/alpine-helm-ssh:3.8.1
+  # image: rybalka1/alpine-helm-ssh:3.8.1
+  image: stanbtkv/alpine-helm-ssh:3.8.1
   script:
     - cd $CI_PROJECT_DIR/helm/backend
     - helm package . --app-version ${VERSION} --version ${VERSION}
