@@ -1,0 +1,7 @@
+image: rybalka1/momo-backend:latest
+tag: latest
+imagePullPolicy: Always
+containerPort: 8081
+
+
+

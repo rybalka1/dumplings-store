@@ -1,0 +1,13 @@
+image: rybalka1/momo-frontend:latest
+tag: latest
+imagePullPolicy: Always
+revisionHistoryLimit: 15
+fqdn: momo-store.site
+apifqdn: api.momo-store.site
+httpPort: 80
+ingressBackendName: backend
+ingressBackendPort: 8081
+strategy:
+  type: Recreate
+
+
