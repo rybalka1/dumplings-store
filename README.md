@@ -84,8 +84,8 @@ ArgoCD настроен на обновление приложений в реж
  - [ ] https://grafana.momo-store.site/
 
 **Helm-чарты**
- - [ ] https://nexus.praktikum-services.ru/#browse/browse:helmfront11
- - [ ] https://nexus.praktikum-services.ru/#browse/browse:helmback11
+ - [ ] https://nexus.praktikum-services.ru/#browse/browse:momo-helm-backend
+ - [ ] https://nexus.praktikum-services.ru/#browse/browse:momo-helm-frontend
 
 **Docker Hub**
  - [ ] https://hub.docker.com/repository/docker/rybalka1/momo-frontend
