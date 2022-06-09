@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Momo Store aka Пельменная №2
 
 <img width="900" alt="image" src="https://user-images.githubusercontent.com/9394918/167876466-2c530828-d658-4efe-9064-825626cc6db5.png">
@@ -113,4 +112,3 @@ NODE_ENV=production VUE_APP_API_URL=http://localhost:8081 npm run serve
 go run ./cmd/api
 go test -v ./... 
 ```
->>>>>>> ff2e5ee9d6e68b9854f01a0bb8ba064f9e8c9431
