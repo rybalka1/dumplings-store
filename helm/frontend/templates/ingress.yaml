@@ -46,7 +46,7 @@ spec:
 #    server: https://acme-staging-v02.api.letsencrypt.org/directory
 # при переключении со staging нужно заменить в Metadata:name privateKeySecretRef:name "letsencrypt-staging" на "letsencrypt-prod"
     server: https://acme-v02.api.letsencrypt.org/directory
-    email: 142608@gmail.com
+    email: rybalka.dmitrii@gmail.com
     privateKeySecretRef:
       name: letsencrypt-prod
     solvers:
