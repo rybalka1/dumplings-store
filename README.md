@@ -1,4 +1,4 @@
-# Momo Store aka Пельменная №2
+# Momo Store - Пельменная №2
 
 <img width="900" alt="image" src="https://user-images.githubusercontent.com/9394918/167876466-2c530828-d658-4efe-9064-825626cc6db5.png">
 
@@ -14,30 +14,6 @@
 - Helm - пакетный менеджер для Kubernetes
 - ArgoCD - инструмент continuous delivery для Kubernetes, позволяющий реализовать подход GitOps
 - Grafana, Loki, Promtail, Prometheus для сбора данных и визуализации мониторинга
-
-**Чек-лист по функционалу, реализованному в проекте**:
-
-- [x] Код хранится в GitLab с использованием любого git-flow
-- [x] В проекте присутствует .gitlab-ci.yml, в котором описаны шаги сборки
-- [x] Артефакты сборки (бинарные файлы, docker-образы или др.) публикуются в систему хранения (Nexus или аналоги)
-- [x] Артефакты сборки версионируются
-- [x] Написаны Dockerfile'ы для сборки Docker-образов бэкенда и фронтенда
-- [x] Бэкенд: бинарный файл Go в Docker-образе
-- [x] Фронтенд: HTML-страница раздаётся с Nginx
-- [x] В GitLab CI описан шаг сборки и публикации артефактов
-- [x] В GitLab CI описан шаг тестирования
-- [x] В GitLab CI описан шаг деплоя
-- [x] Развёрнут Kubernetes-кластер в облаке
-- [x] Kubernetes-кластер описан в виде кода, и код хранится в репозитории GitLab
-- [x] Конфигурация всех необходимых ресурсов описана согласно IaC
-- [x] Состояние Terraform'а хранится в S3
-- [x] Картинки, которые использует сайт, или другие небинарные файлы, необходимые для работы, хранятся в S3
-- [x] Секреты не хранятся в открытом виде
-- [x] Написаны Kubernetes-манифесты для публикации приложения
-- [x] Написан Helm-чарт для публикации приложения
-- [x] Helm-чарты публикуются и версионируются в Nexus
-- [x] Приложение подключено к системам логирования и мониторинга
-- [x] Есть дашборд, в котором можно посмотреть логи и состояние приложения
 
 ### Предварительная подготовка для работы с проектом
 
@@ -77,41 +53,40 @@
 После появления новой версии frontend или backend в результате выполнения пайплайна GitLab собирается новый docker image, Helm-чарт формируется, версионируется и публикуется в Nexus.
 ArgoCD настроен на обновление приложений в режиме Auto-Sync и при появлении новой версии Helm-чарта в Nexus обновление произойдет автоматически.
 
-### Ссылки на приложение и инструменты
-
-- [ ] <https://argocd.momo-store.site/>
-- [ ] <https://grafana.momo-store.site/>
-
 ### Helm-чарты
 
-- [ ] <https://nexus.praktikum-services.ru/#browse/browse:momo-helm-backend>
-- [ ] <https://nexus.praktikum-services.ru/#browse/browse:momo-helm-frontend>
+- <https://nexus.praktikum-services.ru/#browse/browse:momo-helm-backend>
+- <https://nexus.praktikum-services.ru/#browse/browse:momo-helm-frontend>
 
 ### Docker Hub
 
-- [ ] <https://hub.docker.com/repository/docker/rybalka1/momo-frontend>
-- [ ] <https://hub.docker.com/repository/docker/rybalka1/momo-backend>
+- <https://hub.docker.com/repository/docker/rybalka1/momo-frontend>
+- <https://hub.docker.com/repository/docker/rybalka1/momo-backend>
 
-**И самое главное - наша новая пельменная**:
+Ссылка на пельменную:
 
-- [ ] <https://momo-store.site/>
-=======
+- <https://momo-store.site/>
 
-# Dumplings store - Пельменная №2
+Скриншот пельменной:
+
+## Dumplings store - Пельменная №2
 
 <img width="900" alt="image" src="https://user-images.githubusercontent.com/9394918/167876466-2c530828-d658-4efe-9064-825626cc6db5.png">
 
-## Frontend
+## Legacy
 
-```bash
-npm install
-NODE_ENV=production VUE_APP_API_URL=http://localhost:8081 npm run serve
-```
-
-## Backend
-
-```bash
-go run ./cmd/api
-go test -v ./...
-```
-<https://user-images.githubusercontent.com/9394918/167876466-2c530828-d658-4efe-9064-825626cc6db5.png>
+> ## Frontend
+>
+>```bash
+>npm install
+>NODE_ENV=production VUE_APP_API_URL=http://localhost:8081 npm run serve
+>```
+>
+>## Backend
+>
+>```bash
+>go run ./cmd/api
+>go test -v ./...
+>```
+>
+><https://user-images.githubusercontent.com/9394918/167876466-2c530828-d658-4efe-9064-825626cc6db5.png>
