@@ -1,0 +1,25 @@
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: grafana
+  namespace: monitoring
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+spec:
+  ingressClassName: "nginx"
+  tls:
+    - hosts:
+        - grafana.momo-store.site
+      secretName: letsencrypt-grafana
+  rules:
+  - host: "grafana.momo-store.site"
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: kube-stack-prometheus-grafana
+            port:
+              number: 80
