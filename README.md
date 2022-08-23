@@ -1,5 +1,5 @@
 # Дипрломный проект по курсу "DevOps для эксплуатации и разработки"
- 
+
 <img width="900" alt="image" src="https://user-images.githubusercontent.com/9394918/167876466-2c530828-d658-4efe-9064-825626cc6db5.png">
 
 ## Магазин пельменей - "Momo Store aka Пельменная №2"
@@ -68,13 +68,14 @@ ArgoCD настроен на обновление приложений в реж
 - <https://momo-store.site/>
 
 Ссылка на мониторинг:
+
 - <https://grafana.momo-store.site>
 
 Работа с другими частями кластера проводится через port-forwarding локально на раборчей станции.
 
 Скриншот пельменной:
 
-# Dumplings store - Пельменная №2
+## Dumplings store - Пельменная №2
 
 <img width="900" alt="image" src="https://user-images.githubusercontent.com/9394918/167876466-2c530828-d658-4efe-9064-825626cc6db5.png">
 
@@ -94,4 +95,4 @@ ArgoCD настроен на обновление приложений в реж
 >go test -v ./...
 >```
 >
->https://user-images.githubusercontent.com/9394918/167876466-2c530828-d658-4efe-9064-825626cc6db5.png
+><https://user-images.githubusercontent.com/9394918/167876466-2c530828-d658-4efe-9064-825626cc6db5.png>

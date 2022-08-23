@@ -63,6 +63,7 @@ func run() error {
 	stop := make(chan os.Signal, 1)
 	signal.Notify(stop, syscall.SIGINT, syscall.SIGTERM)
 
+	// hi
 	select {
 	case sig := <-stop:
 		logger.Log.Info("shutting down gracefully", zap.String("signal", sig.String()))
